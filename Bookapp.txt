@@ -1,0 +1,24 @@
+package week9;
+
+public class Bookapp {
+	
+	public static void main(String[] args) {
+		Book car1 = new Book("00001", "H. G. Wells", "The War of the Worlds", 20.59);
+
+		System.out.println(car1.toString());
+		
+		Book car2 = new Book();
+		car2.setISBN("00002");
+		car2.setAuthor("Peter Tyson");
+		car2.setTitle("Getting Started with Dwarf Fortress");
+		car2.setPrice(15.59);
+		
+		System.out.println(car2.toString());
+		
+		System.out.println(car1.getISBN());
+		
+		
+	}
+}
+
+

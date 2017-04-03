@@ -1,0 +1,52 @@
+package week9;
+
+public class Book {
+	
+	private String ISBN;
+	private String Author;
+	private String Title;
+	private double Price;
+	
+public Book() {
+		
+	}
+public Book(String ISBN, String Author, String Title, double Price) {
+
+	this.ISBN = ISBN;
+	this.Author = Author;
+	this.Title = Title;
+	this.Price = Price;
+}
+
+
+	public String getISBN() {
+	return ISBN;
+}
+public void setISBN(String iSBN) {
+	ISBN = iSBN;
+}
+public String getAuthor() {
+	return Author;
+}
+public void setAuthor(String author) {
+	this.Author = author;
+}
+public String getTitle() {
+	return Title;
+}
+public void setTitle(String title) {
+	this.Title = title;
+}
+public double getPrice() {
+	return Price;
+}
+public void setPrice(double price) {
+	this.Price = price;
+}
+@Override
+public String toString() {
+	return ISBN + "\t" + Author + "\t" + Title + "\t$" + Price;
+
+}
+}
+
